@@ -8,7 +8,7 @@ module.exports = {
 },
 
   // Theming
-  theme: 'custom-theme',
+  theme: 'soft-blue',
 
   // Ecommerce Platform
   platform: 'vtex',

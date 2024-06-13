@@ -1,0 +1,11 @@
+@import "@faststore/ui/src/styles/base/utilities";
+
+// Overwrites Breakpoints & Mixins ////////////////////
+
+$breakpoints: (
+  "phone":         320px,
+  "phonemid":      375px,
+  "tablet":        768px,
+  "notebook":      1280px,
+  "desktop":       1500px,
+);
