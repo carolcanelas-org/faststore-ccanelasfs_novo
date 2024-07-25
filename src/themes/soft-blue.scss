@@ -86,4 +86,9 @@
         }
         }
     }
+    // Add this to your custom-theme.scss
+    .section {
+      [data-fs-tiles] [data-fs-content="tiles"] { @include layout-content-full; }
+      [data-fs-banner-text] [data-fs-content="banner"] { @include layout-content-full; }
+    }
   }
