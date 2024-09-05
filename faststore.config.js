@@ -96,4 +96,8 @@ module.exports = {
       "https://ccanelasfs.myvtex.com/cms-releases/webhook-releases",
     ],
   },
+  async redirects() {
+    const redirects = require('./src/redirects.json');
+    return redirects;
+ },
 }
