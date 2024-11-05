@@ -1,12 +1,14 @@
-import { ProductDetailsSection, getOverriddenSection } from '@faststore/core'
-import styles from './buy-button.module.scss'
+import { ProductDetailsSection, getOverriddenSection } from "@faststore/core";
+import styles from "./customPrice.module.scss";
+import CustomPrice from "./Price";
 
 const ProductDetailsWithCustomButton = getOverriddenSection({
-Section: ProductDetailsSection,
-className: styles.buyButton,
-components: {
-    BuyButton: { props: { size: "small", iconPosition: "right" } } 
-},
-})
-
+  Section: ProductDetailsSection,
+  className: styles.customPrice,
+  components: {
+    ProductPrice: {
+      Component: CustomPrice,
+    },
+  },
+});
 export default ProductDetailsWithCustomButton;
